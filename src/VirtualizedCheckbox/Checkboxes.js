@@ -26,7 +26,7 @@ class Checkboxes extends Component {
 
   checkboxRenderer = ({ index, style }) => {
     const { items, labelKey } = this.props;
-    const item = items[index - 1];
+    const item = items[index];
     return (
       <Checkbox
         style={style}
