@@ -21,7 +21,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "prepare": "rimraf lib && npm run compile",
     "compile": "npm run lint && npm run compile:js",
     "lint": "eslint src/**/*.js",
     "compile:js": "rimraf lib && cross-env NODE_ENV=production babel src/VirtualizedCheckbox -d lib --presets es2015,react-app --ignore test.js"
